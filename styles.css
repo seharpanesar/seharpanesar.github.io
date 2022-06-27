@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: white;
+}
+
+.container {    
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+}
+
+.intro {
+    padding-top: 30px;
+    justify-content: center;
+    padding-left: 30px;
+    max-width: 1000px;
+    /* background-color: black; */
+}
+
+.intro_text {
+    padding-top: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #9824c689;
+}
+
+.logo {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+    /* animation: fadeIn 5s; */
+    /* -webkit-animation: fadeIn 5s; */
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+/* .class will style every div with class = class. 
+    you could also do
+*/
+.burger {
+    display: none;
+}
+
+/* 
+Target the class burger and all of its divs
+*/
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226,226,226);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* @ keyframes allows intermediate transitions within a overall transition in js */
+@keyframes navLinkFade {
+    from {
+        opacity: 0; 
+        transform: translateX(50px)
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Mobile view  */
+@media screen and (max-width:768px) {
+    /* the nav bar is "overflown" or translated to the right side of the screen. 
+       we don't really want to show that when it is not prompted, so we hide it
+    */
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top:8vh;
+        background-color: #5d4954;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+
+        /* moves it off the screen. should only be visible when burger is clicked on */
+        transform: translateX(100%);
+
+        transition: transform 
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
