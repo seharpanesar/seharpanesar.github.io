@@ -17,11 +17,11 @@ function type() {
     letter = currentText.slice(0, ++index);
 
     document.querySelector('.logo').textContent = letter;
-    setTimeout(type, 100);
+    setTimeout(type, 50);
 };
 
 const navLinkIntro = () => {
-    navLinks.style.animation = `animation: fadeIn 5s`;
+    navLinks.style.animation = `navLinkFade 0.5s ease forwards`;
 }
 
 // annon function that allows nav bar to displayed on click. 
