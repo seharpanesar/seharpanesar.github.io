@@ -33,6 +33,25 @@ nav {
     margin: 0 auto;
 }
 
+.nav-links button{
+    cursor: pointer;
+    letter-spacing: 3px;
+    font-size: large;
+    font-style: bold;
+
+    width: 150px;
+    height: 50px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    transition: ease-out 0.4s;
+    outline: none;
+}
+
+.nav-links button:hover {
+    background-color: #72bbe8
+}
+
 section {
     display: flex;
     height: 80vh;
@@ -50,14 +69,17 @@ section {
     width: 100%;
     object-fit: cover;
     border-radius: 20px;
+    box-shadow: 10px
 } 
 
 .name {
     font-size: 60px;  
+    text-shadow: 10px;
     position: absolute;
     top: 50%;
     left: 10%;
     width: 500px;
+    /* color: white; */
 } 
 
 .intro_text {
@@ -66,4 +88,5 @@ section {
     left: 55%;
     width: 500px;
     font-size: 20px;
+    /* color: white */
 }
