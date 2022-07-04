@@ -1,18 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cvStyles.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300&family=Sora:wght@300&display=swap" rel="stylesheet">
-
+    <title>3D Animated Text Sphere</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <span class="Sphere"></span>
+
+    <!-- Including the TagCloud.js script CDN in the document    -->
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
+    <script>
+        const Texts = [
+            'HTML', 'CSS', 'JAVASCRIPT',
+            'SWIFT', 'MONGOOSE', 'REACT',
+            'PYTHON', 'SASS',
+            'DJANGO', 'NODEJS', 'MONGODB',
+            'EXPRESS', 'MYSQL', 'JQUERY', 'JAVA'
+        ];
+
+        var tagCloud = TagCloud('.Sphere', Texts, {
+
+            // Sphere radius in px
+            radius: 230,
+
+            // animation speed
+            // slow, normal, fast
+            maxSpeed: 'normal',
+            initSpeed: 'fast',
+
+            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
+            direction: 135,
+
+            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).]
+            keep: true
+
+        });
+
+        // Giving color to each text in sphere
+        var color = '#FF5733 ';
+        document.querySelector('.Sphere').style.color = color;
+    </script>
+</body>
+
+</html>
+
+
+
+
+<!-- division  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sehar Panesar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300&family=Sora:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./cvStyles.css">
+</head>
+
+<body>
+    <!-- "sticky" navbar - remains consistent across links   -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <form action="../home/index.html">
+                <button class="btn1">Home</button>
+             </form>
+             <form action="../cv/cvIndex.html">
+                <button class="btn2">CV</button>
+             </form>
+             <form action="./">
+                <button class="btn3">Projects</button>
+             </form>
+             <form action="./">
+                <button class="btn4">Contact</button>
+             </form>
+        </div>
+    </nav>
+
+    <!-- cv section  -->
+    <div class="cv">
+        <div class="experience">
+            <h1>Experience</h1>
+        </div>
+
+        <div class="bottom">
+            <div class="courses">
+                <h1>Courses</h1>
+
+            </div>
+            <div class="skills">
+                <h1>Skills</h1>
+                <div class="skill-sphere"></div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- LEARN FROM BUG: import the js library dependencies before 
+        using your own js lib that use dependicies-->
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
     <script src="./cvApp.js"></script>
 </body>

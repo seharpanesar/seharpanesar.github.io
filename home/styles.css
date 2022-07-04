@@ -5,7 +5,7 @@
     font-family: 'Sora', sans-serif;
 }
 
-
+/* Nav styling */
 nav {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
@@ -52,6 +52,7 @@ button {
     background-color: #72bbe8
 }
 
+/* End of nav styling */
 section {
     display: flex;
     height: 80vh;
@@ -59,12 +60,12 @@ section {
     align-items: center;
 }
 
-.hero {
+.home {
     height: 90%;
     width: 90%;
 }
 
-.hero img {
+.home img {
     height: 110%;
     width: 100%;
     object-fit: cover;
@@ -79,7 +80,6 @@ section {
     top: 50%;
     left: 10%;
     width: 500px;
-    /* color: white; */
 } 
 
 .intro_text {
@@ -88,5 +88,20 @@ section {
     left: 55%;
     width: 500px;
     font-size: 20px;
-    /* color: white */
+}
+
+/* Applying CSS to sphere */
+.skill-sphere {
+    display: inline-block;
+    top: 100px;
+    left: 32%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Sora', sans-serif;
+    font-size: 20px;
+}
+
+/* Change color of each text in sphere on hover   */
+.skill-sphere--item:hover {
+    color: #FFC300;
 }
