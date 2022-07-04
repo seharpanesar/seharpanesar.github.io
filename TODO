@@ -1,0 +1,3 @@
+- create a template html file for both the project and contact tabs 
+    - template should contain the navbar functionality.
+    - maybe include js dependencies like gsap? 
