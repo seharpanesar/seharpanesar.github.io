@@ -1,3 +1,8 @@
-- create a template html file for both the project and contact tabs 
-    - template should contain the navbar functionality.
-    - maybe include js dependencies like gsap? 
+- add typing to intro 
+
+- skill tree: 
+    - color code it 
+    - add ur actual skills 
+    - add a bar from least skilled to most skilled
+- create animation to display courses
+- animate in the resume 

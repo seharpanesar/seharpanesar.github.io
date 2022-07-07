@@ -57,40 +57,64 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+}
+
+.exp_cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.card-container {
+    width: 300px;
+    height: 300px;
+    border-radius: 30px;
+    padding-bottom: 20px;
 }
 
 .card {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease-in-out; 
+    transform-style: preserve-3d;
+    box-shadow:0px 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card figure{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    width: 10%;
-    height: 10%;
-    transform-style: preserve-3d; /* allows back side to be shown*/ 
-    transition: all 0.5s ease; 
-    background: yellow;
+    border-radius: 10px;
 }
 
 .front {
+    background: yellow;
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* avoids flicker on flip*/
     color: #333;
+    text-align: center;
+    padding:20px;
 }
 
 .back {
+    background: red;
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: red;
     color: #333;
     transform: rotateY(180deg);
+    text-align: center;
+    padding:20px;
 }
-
-.card:hover {
-    transform: rotateY(180deg);
-}
-
-
 
 /* courses and skills styling */
 .bottom {
