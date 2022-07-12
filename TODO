@@ -1,8 +1,18 @@
-- add typing to intro 
+Home page: 
+    - add typing to intro 
 
-- skill tree: 
-    - color code it 
-    - add ur actual skills 
-    - add a bar from least skilled to most skilled
-- create animation to display courses
-- animate in the resume 
+CV:
+    - add the resume link (do before moving on)
+    - why does nav bar fluctuate when going into cv section? 
+    - color code it skill tree (later)
+    - add a bar from least skilled to most skilled (later)
+    - add animations to the each part of the cv (later)
+    - get rid of redundant code (there is a lot of code that is useless in this folder)
+
+Contact: 
+    - find a contact page you can replicate 
+
+Projects:
+    - just to github for now 
+    - do cards or something more creative 
+
