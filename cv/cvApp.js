@@ -33,8 +33,8 @@ var tagCloud = TagCloud('.sphere', Texts, {
 
     // animation speed
     // slow, normal, fast
-    maxSpeed: 'medium',
-    initSpeed: 'fast',
+    maxSpeed: 'fast',
+    initSpeed: 'medium',
 
     // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
     direction: 135,
