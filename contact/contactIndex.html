@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300&family=Sora:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./contactStyles.css">
 </head>
 
@@ -32,8 +33,32 @@
         </div>
     </nav>
 
-    <div class="hero">
+    <div class="header">
         <h1>Contact</h1>
+
+        <h3>I love taking on interesting and difficult projects, so if you have one in mind, please let me know!</h3>
+    </div>
+
+    <div class="container">
+        <form target="_blank" action="https://formsubmit.co/sehar.panesar@gmail.com" method="POST">
+            <div class="form-group">
+                <div class="form-row">
+                    <div class="col">
+                        <input type="text" name="name" class="form-control" placeholder="Your name" required>
+                    </div>
+                    <div class="col">
+                        <input type="email" name="email" class="form-control" placeholder="Your email address" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="_subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your message" class="form-control" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit message</button>
+        </form>
     </div>
 
     <script src="./contactApp.js"></script>
