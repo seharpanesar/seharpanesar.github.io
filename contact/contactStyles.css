@@ -6,11 +6,14 @@
 }
 
 /* Nav styling */
-.navbar {
+nav {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     min-height: 10vh;
-    align-items: center;   
+    align-items: center; 
+    padding: 0; 
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 button {
@@ -22,7 +25,6 @@ button {
     color: initial;
 }
 
-
 .nav-links {
     grid-column: 2/3;
     font-style: bold;
@@ -32,6 +34,7 @@ button {
     justify-content: space-around;
     width: 70%;
     margin: 0 auto;
+    width: 1000px;
 }
 
 .nav-links button{
@@ -58,7 +61,13 @@ button {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* max-width: fit-content; */
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1 {
@@ -72,6 +81,8 @@ h1 {
     margin-inline-end: 0px;
     font-weight: bold;
     color: black;
+
+    text-decoration: underline;
 }
 
 h3 {
