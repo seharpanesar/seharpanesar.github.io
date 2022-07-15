@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300&family=Kumbh+Sans:wght@400;700&family=Roboto:wght@300&family=Sora:wght@300&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="cvStyles.css">
+    <link rel="stylesheet" href="./cvStyles.css">
 </head>
 
 <body>
@@ -77,6 +77,9 @@
                 Graduating in Fall 2022 with a Bachelor's Degree. <br>
                 Graduating in Fall 2023 with a Master's Degree. 
             </h3>
+            <div class="description-container">
+                <div class="description"></div>
+            </div>
             <div class="courses">
                 <div class="bach" id="cs159">
                     <p class="name">CS 159</p>
@@ -162,10 +165,6 @@
                 <div class="sem" id="f21" >Fall 2022</div>
             </div>
             <div class="courses-bottom">
-                <div class="description-container">
-                    <div class="description"></div>
-                </div>
-            
                 <div class="legend">
                     <div class="legend-entry" >
                         <div class="point" id="blue"></div>
@@ -183,10 +182,16 @@
         <div class="skills">
             <h1>Skills</h1>
             <span class="sphere"></span>
+            <div class="bar"></div>
+            <div class="bar-labels">
+                <h3>Familiar with</h3>
+                <h3>Strongest skills</h3>
+            </div>
+            
         </div>
 
         <div class="resume">
-            <h3>You can find my resume in pdf format&nbsp
+            <h3>You can find my resume in PDF format&nbsp
                 <a href="Resume.pdf" target="_blank" rel="noopener noreferrer">
                     here
                 </a>
@@ -195,6 +200,7 @@
         
     </div>
 
+    <script src="./tagcloud_scratch.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script>
     <script src="./cvApp.js"></script>
 </body>

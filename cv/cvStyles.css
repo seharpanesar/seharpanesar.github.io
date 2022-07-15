@@ -5,26 +5,14 @@
     font-family: 'Sora', sans-serif;
 }
 
-h1 {
-    padding:30px;
-    text-decoration: underline;
-    font-weight: bold;
-}
-
-h3 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 50px;
-    font-weight: normal;
-}
-
 /* Nav styling */
 nav {
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     min-height: 10vh;
     align-items: center;   
+    padding: 0;
+    overflow: hidden;
 }
 
 button {
@@ -45,6 +33,7 @@ button {
     justify-content: space-around;
     width: 70%;
     margin: 0 auto;
+    width: 1000px;
 }
 
 .nav-links button{
@@ -74,8 +63,21 @@ button {
     flex-direction: column;
 }
 
+h1 {
+    padding:30px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: normal;
+}
+
 .exp_cards {
-    /* padding-top: 50px; */
     display: flex;
     width: 70%;
     justify-content: space-around;
@@ -120,7 +122,7 @@ button {
 }
 
 .back {
-    background: rgba(255, 153, 19, 0.5);
+    background: rgba(240, 143, 144, 0.5);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -145,21 +147,34 @@ button {
     flex-direction: column;
 }
 
-/* Applying CSS to sphere */
-.skill-sphere {
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-family: 'Sora', sans-serif;
-    font-size: 20px;
+.bar {
+    width: 700px;
+    height: 10px;
+    background: linear-gradient(to right,#2d95f7 , #c72eff, #e63e41);
+    margin: 30px;
+    border-radius: 5px;
 }
 
-/* Change color of each text in sphere on hover   */
-.skill-sphere--item:hover {
-    color: #FFC300;
+.tagcloud--item {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.tagcloud--item:hover {
+    opacity: 1 !important;
+    z-index: 100 !important;
+    cursor: pointer;
+    
+}
+
+.bar-labels {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 550px;
+    padding-bottom: 40px;
 }
 
 /* courses styling */
-/* target body tag */
 .courses-container {
     font-family: "Sora";
     min-height: 100vh;
@@ -171,7 +186,6 @@ button {
 
 .courses {
     display: grid;
-    /* max-width: 00px; */
     grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-row-gap: 24px;
@@ -205,7 +219,7 @@ button {
 
 .mast {
     min-height: 30px;
-    background-color: rgba(255, 153, 19, 0.5);
+    background-color: rgba(240, 143, 144, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,7 +230,7 @@ button {
     border: solid;
     border-radius: 50%;
     border-width: 3px;
-    border-color: rgba(255, 153, 19);
+    border-color: rgba(240, 143, 144);
 
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px;
     transition: all .3s ease-in-out;
@@ -251,7 +265,6 @@ button {
 .legend-entry {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: row;
 }
 
@@ -268,15 +281,15 @@ button {
 }
 
 #orange {
-    background-color: rgb(255, 153, 19);
+    background-color: rgb(240, 143, 144);
 }
 
 .description-container {
     position: relative;
     width: 30rem;
     height: 5rem;
-    background-color: rgb(45, 149, 247, 0.5);
-    border-color: rgb(45, 149, 247, 1);
+    background-color: rgb(137, 134, 234,0.5);
+    border-color: rgb(137, 134, 234);
     bottom: 2%;
 
     border-radius: 10px;
@@ -288,7 +301,6 @@ button {
 }
 
 /* positioning and coloring of courses */
-
 #cs159 {
     grid-row: 3 / 4;
     grid-column: 1 / 2;
@@ -365,7 +377,6 @@ button {
 }
 
 /* semester positioning */
-
 .sem {
     display: flex;
     justify-content: center;
