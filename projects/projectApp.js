@@ -1,3 +1,14 @@
+gsap.to(".card", {
+    opacity: 1,
+    y: 0,
+    // duration: 0.3,
+    stagger: {
+        each:0.2,
+    },
+    
+    ease: Power1.easeOut
+});
+
 document.getElementById("chess").onclick = function () {
     window.open(
         'https://github.com/seharpanesar/ChessJava',
