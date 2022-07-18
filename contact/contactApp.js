@@ -13,4 +13,25 @@ arr = [title, text, name_email, subject, message, button]
 
 let t = gsap.timeline()
 
-t.fromTo(arr,{opacity:0, y:20}, {opacity:1, y:0})
+t.fromTo(arr,{opacity:0, y:10}, {opacity:1, y:0})
+
+info_text = "I love taking on interesting and difficult projects, so if you have one in mind, please let me know!"
+
+current_text = ""
+
+let i = 0
+let j = 0
+
+function loop() {
+    if(i < info_text.length) {
+        current_text = current_text.concat(info_text[i])
+        text.innerHTML = current_text;
+        console.log(info_text[i]);
+    }
+    i++
+
+    setTimeout(loop, 30)
+}
+
+setTimeout(loop, 1500)
+loop()
