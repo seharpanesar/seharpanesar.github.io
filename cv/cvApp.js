@@ -16,22 +16,13 @@ var order = [exp_header, exp_cards, edu_header, edu_desc, edu_box, edu_grid,
     edu_legend, skills_header, skills_cloud, skills_bar, skills_bar_labels]
 
 
-    //https://www.youtube.com/watch?v=ygcEKd0RIGg
-
-
 let t1 = new TimelineMax();
 
 t1.fromTo(exp_header,0.5,{opacity:0, y:20}, {opacity:1, y:0, duration: 0.3})
 .fromTo(exp_cards, {opacity: 0, y:20}, {opacity: 1, y:0,duration: 0.3})
 .fromTo(edu_header,{opacity:0, y:20}, {opacity:1, y:0,duration: 0.3})
 .fromTo(edu_desc,  {opacity: 0, y:20}, {opacity: 1, y:0,duration: 0.3})
-// .fromTo(edu_box, {opacity: 0, y:20}, {opacity: 1, y:0,duration: 0.3})
-// .fromTo(edu_grid, {opacity: 0, y:20}, { opacity: 1, y:0,duration: 0.3})
-// .fromTo(edu_legend, {opacity: 0, y:20}, {opacity: 1, y:0,duration: 0.3})
-// .fromTo(skills_header, {opacity: 0, y:20}, {opacity: 1, y:0,duration: 0.3})
-// .fromTo(skills_cloud,  {opacity: 0, y:20}, { opacity: 1, y:0,duration: 0.3})
-// .fromTo(skills_bar, {opacity: 0, y:20}, { opacity: 1, y:0,duration: 0.3})
-// .fromTo(skills_bar_labels, { opacity: 0, y:20}, {opacity: 1, y:0,duration: 0.3})
+
 
 
 let t2 = gsap.timeline({
@@ -51,7 +42,6 @@ t2.from(edu_box, {opacity: 0, y:20})
 
 
 
-
 // animation for courses description display 
 courses = document.querySelectorAll('.bach,.mast');
 
@@ -63,8 +53,8 @@ for (var i = 0 ; i < courses.length; i++) {
 function changeBackground(event) {
     object = event.target
     var paragraph = document.querySelector(".description");
+    paragraph.innerHTML = "" // clear current text
     var text = document.createTextNode(object.getElementsByClassName("course-desc")[0].innerHTML);
-
     paragraph.appendChild(text);
 }
 
