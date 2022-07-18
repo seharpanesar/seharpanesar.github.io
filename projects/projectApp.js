@@ -11,7 +11,7 @@ gsap.to(".card", {
 
 document.getElementById("chess").onclick = function () {
     window.open(
-        'https://github.com/seharpanesar/ChessJava',
+        'https://github.com/seharpanesar/ChessJava/tree/master/src',
         '_blank'
     );
 };
