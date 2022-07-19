@@ -129,9 +129,15 @@ h3 {
     backface-visibility: hidden;
     color: #333;
     transform: rotateY(180deg);
-    text-align: center;
+    
     padding:20px;
+}
 
+.back-text {
+    position: relative;
+    text-align: left;
+    font-size: 13pt;
+    top: -15px;
 }
 
 /* courses and skills styling */
