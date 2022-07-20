@@ -119,6 +119,7 @@ h3 {
     color: #333;
     text-align: center;
     padding:20px;
+    font-size: 18pt;
 }
 
 .back {
@@ -136,7 +137,7 @@ h3 {
 .back-text {
     position: relative;
     text-align: left;
-    font-size: 13pt;
+    font-size: 12pt;
     top: -15px;
 }
 
