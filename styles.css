@@ -90,10 +90,10 @@ section {
 .intro_text {
     position: absolute;
     top: 24%;
-    right: 15%;
+    right: 9%;
     width: 700px;
     color:  black;
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 .typing { 
