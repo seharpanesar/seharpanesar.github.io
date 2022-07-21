@@ -19,10 +19,12 @@ info_text = "Hey there! <br><br> \
 I am a 4th year BS/MS student at Purdue University studying Computer Science, and \
 I love building things with software.  <br><br>\
 Most of my experience is with backend engineering, but I recently became interested frontend engineering. \
-I am also available for freelance work! Currently, I am looking for a SWE intern position for 2023 Summer. \
+I am also available for freelance work! \
 I have hosted some of my projects on this website, so feel free to browse around and contact me! <br><br>\
 Thanks, <br>\
 Sehar Panesar"
+
+//  Currently, I am looking for a SWE intern position for 2023 Summer.
 
 current_text = ""
 
