@@ -38,7 +38,7 @@ function loop() {
     }
     i++
 
-    setTimeout(loop, Math.random()*30 + 30)
+    setTimeout(loop, Math.random()*20 + 20)
 }
 
 setTimeout(loop, 1500)
