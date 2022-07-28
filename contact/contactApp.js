@@ -26,11 +26,10 @@ function loop() {
     if(i < info_text.length) {
         current_text = current_text.concat(info_text[i])
         text.innerHTML = current_text;
-        console.log(info_text[i]);
     }
     i++
 
-    setTimeout(loop, Math.random()*30 + 30)
+    setTimeout(loop, Math.random()*30 + 15)
 }
 
 setTimeout(loop, 1500)
