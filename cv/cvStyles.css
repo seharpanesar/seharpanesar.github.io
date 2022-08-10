@@ -136,9 +136,11 @@ h3 {
 
 .back-text {
     position: relative;
-    text-align: left;
-    font-size: 12pt;
+    display: flex;
+    text-align: center;
+    font-size: 13pt;
     top: -15px;
+    margin: auto 0;
 }
 
 /* courses and skills styling */
